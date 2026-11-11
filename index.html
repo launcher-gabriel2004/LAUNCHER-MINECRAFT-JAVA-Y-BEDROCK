@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minecraft Launcher_GHB — Java · Bedrock · Dungeons · Legends</title>
+<title>Minecraft Launcher GHB — Java · Bedrock · Dungeons · Legends</title>
 <meta name="description" content="Un lanzador todo en uno para jugar Minecraft Java, Bedrock, Dungeons y Legends desde un solo lugar.">
 <link rel="icon" href="assets/brand/creeper.png">
 <style>
@@ -36,7 +36,7 @@ a{color:inherit;text-decoration:none}
 
 /* ===== HERO ===== */
 .hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid #000}
-.hero .bg{position:absolute;inset:0;background:url('assets/bg/hero.jpg') center/cover no-repeat;transform:scale(1.08);animation:drift 24s ease-in-out infinite alternate}
+.hero .bg{position:absolute;inset:0;background:url('assets/images/wilderness-bound-hero.jpg') center/cover no-repeat;transform:scale(1.08);animation:drift 24s ease-in-out infinite alternate}
 @keyframes drift{from{transform:scale(1.08) translate(0,0)}to{transform:scale(1.14) translate(-2%,-2%)}}
 .hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,#0f0f0fee 0%,#0f0f0fcc 38%,#0f0f0f66 70%,#0f0f0f33 100%),linear-gradient(0deg,var(--bg) 2%,transparent 40%)}
 .hero .inner{position:relative;z-index:2;padding:40px 0}
@@ -128,19 +128,51 @@ footer{border-top:1px solid #000;background:#141414;padding:40px 0 60px;text-ali
 footer .fbrand{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px;font-weight:800;color:var(--txt)}
 footer .fbrand img{width:26px;height:26px;image-rendering:pixelated}
 footer a{color:var(--greenL)}
+
+/* ===== TOUR ===== */
+.eyebrow.l{text-align:left}.tour{padding:54px 0}.tour.alt{background:var(--bg2)}
+.trow{display:grid;grid-template-columns:1fr 1.1fr;gap:38px;align-items:center}.trow.flip .tx{order:2}
+@media(max-width:820px){.trow{grid-template-columns:1fr}.trow.flip .tx{order:0}}
+.tt{font-size:clamp(1.5rem,3.4vw,2.1rem);margin:4px 0 12px}.g{color:var(--greenL)}
+.tx p{color:#d7ded8;margin-top:10px}.dim{color:var(--dim)}.h4{margin:16px 0 4px;color:var(--greenL);font-size:1rem}
+.ck{list-style:none;margin-top:12px}.ck li{padding:4px 0 4px 26px;position:relative;color:#cfd6d0;font-size:.95rem}.ck li::before{content:'';position:absolute;left:4px;top:11px;width:10px;height:10px;background:var(--green2);box-shadow:inset -2px -2px 0 #2a5e1c}
+.how{margin:6px 0 0 20px;color:#cfd6d0;font-size:.95rem}.how li{padding:2px 0}
+code{background:#0d0d0d;border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:.86rem;color:var(--greenL)}
+.toc{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:26px}.toc a{padding:7px 13px;border:1px solid var(--line);border-radius:999px;font-size:.86rem;color:var(--dim);transition:.2s}.toc a:hover{color:#fff;border-color:var(--green2);background:#52a53522}
+.ti{display:grid;gap:14px;min-width:0}
+.win{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#141414;box-shadow:0 18px 44px #000a}
+.wbar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:#262626;border-bottom:1px solid #000;font-size:.76rem;color:var(--dim)}.wbar i{width:10px;height:10px;border-radius:50%;background:#555}.wbar i:first-child{background:#ff5f57}.wbar i:nth-child(2){background:#febc2e}.wbar i:nth-child(3){background:#28c840}.wbar span{margin-left:8px}
+.win>img{width:100%;max-height:340px;object-fit:cover}.win.logo>img{max-height:150px;object-fit:contain;background:#000}.win.tallw>img{max-height:380px;object-position:top}
+figcaption{padding:8px 12px;font-size:.84rem;font-weight:700;color:var(--dim)}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}.gal.g3{grid-template-columns:repeat(3,1fr)}.gal.g4{grid-template-columns:repeat(4,1fr)}
+.gal img{width:100%;height:130px;object-fit:cover;border-radius:10px;border:1px solid var(--line);transition:transform .3s}.gal img:hover{transform:scale(1.04)}
+@media(max-width:560px){.gal.g4,.gal.g3{grid-template-columns:1fr 1fr}}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.homeico{display:flex;align-items:center;gap:14px;background:#141414;border:1px solid var(--line);border-radius:14px;padding:14px 18px;font-family:var(--mc)}.homeico img{width:54px;height:54px;image-rendering:pixelated}
+.skinrow{display:flex;gap:14px;justify-content:center}.skinrow img{width:128px;image-rendering:pixelated;border:1px solid var(--line);border-radius:10px;background:#1b1b1c}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;padding:10px 10px 0;background:#1b1b1c;border-bottom:1px solid #000}.tabs button{font:inherit;font-size:.86rem;font-weight:700;color:var(--dim);background:none;border:0;border-bottom:3px solid transparent;padding:8px 14px;cursor:pointer}.tabs button.on{color:#fff;border-bottom-color:var(--green2)}
+.tp{display:none;padding:18px 20px}.tp.on{display:block}
+.ig{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;padding:14px}.ig img{width:100%;aspect-ratio:1;object-fit:contain;image-rendering:pixelated;background:#1d1d1d;border:1px solid var(--line);border-radius:8px;padding:4px}
+@media(max-width:560px){.ig{grid-template-columns:repeat(6,1fr)}}
+.dlbar{display:flex;align-items:center;gap:12px;padding:10px 14px;background:#1b1b1c;border-top:1px solid #000;font-size:.8rem;color:var(--dim)}.dlbar>div{flex:1;height:10px;background:#0d0d0d;border-radius:5px;overflow:hidden}.dlbar b{display:block;height:100%;background:var(--green2)}.dlbar em{font-style:normal;color:#fff;border:1px solid var(--line);padding:2px 10px;border-radius:6px}
+.avs{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:10px;padding:16px}.avs div{text-align:center;font-size:.7rem;color:var(--dim)}.avs canvas{width:100%;max-width:56px;aspect-ratio:1;image-rendering:pixelated;border-radius:8px;border:2px solid var(--line)}
+.os{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:40px 0 20px}
+.osc{position:relative;background:linear-gradient(180deg,#1b1b1c,#121212);border:1px solid var(--line);border-radius:20px;padding:30px 22px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}.osc.main{border-color:var(--green2);box-shadow:0 0 0 1px var(--green2),0 20px 50px var(--greenGlow)}
+.osc .oi{font-size:2.4rem}.osc .btn{min-width:0;width:100%}.tagx{font-size:.7rem;font-weight:800;letter-spacing:1px;color:var(--orange);border:1px solid #f0a03066;border-radius:999px;padding:3px 10px}
+.guide{margin-top:34px;background:linear-gradient(180deg,#1b1b1c,#151515);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:760px;margin-inline:auto}
 </style>
 </head>
 <body>
 <!-- ===== TOPBAR ===== -->
 <header class="topbar">
   <div class="wrap inner">
-    <a class="brand" href="#top"><img src="assets/brand/creeper.png" alt="">Minecraft Launcher<span style="color:var(--greenL)">_GHB</span></a>
+    <a class="brand" href="#top"><img src="assets/brand/creeper.png" alt="">Minecraft Launcher<span style="color:var(--greenL)"> GHB</span></a>
     <nav>
       <a href="#que-es">¿Qué es?</a>
       <a href="#juegos">Juegos</a>
       <a href="#caracteristicas">Características</a>
-      <a href="#capturas">Capturas</a>
-      <a href="#instalacion">Instalación</a>
+      <a href="#tour">Tour</a>
+      <a href="#instalacion">Guía</a>
       <a class="cta" href="#descargar">Descargar</a>
     </nav>
   </div>
@@ -153,7 +185,7 @@ footer a{color:var(--greenL)}
   <img class="creeper-float" src="assets/brand/creeper.png" alt="">
   <div class="wrap inner">
     <span class="badge">▶ Todo en uno · Java · Bedrock · Dungeons · Legends</span>
-    <img class="logo" src="assets/brand/mc-logo.png" alt="Minecraft Launcher_GHB">
+    <img class="logo" src="assets/brand/mc-logo.png" alt="Minecraft Launcher GHB">
     <h1>Juega <b>todos tus mundos</b> desde un solo lugar 🎮✨</h1>
     <p class="lead">Un lanzador todo en uno para jugar <b>Java</b>, <b>Bedrock</b>, <b>Dungeons</b> y <b>Legends</b> — con cuentas offline, skins y capas en 3D, soporte para mods y modpacks, y pantallas de carga animadas aleatorias.</p>
     <div class="chips">
@@ -163,8 +195,8 @@ footer a{color:var(--greenL)}
       <span class="chip"><b>✅</b> Cargas animadas</span>
     </div>
     <div class="btns">
-      <a class="btn main" href="#descargar">Descargar .exe <small>Windows · instalador automático</small></a>
-      <a class="btn alt" href="#descargar">Descargar .zip <small>Versión portable</small></a>
+      <a class="btn main" href="#descargar">Download Windows <small>.exe portable · doble clic</small></a>
+      <a class="btn alt" href="#descargar">Linux · Mac <small>.zip · experimental</small></a>
     </div>
   </div>
 </section>
@@ -172,8 +204,8 @@ footer a{color:var(--greenL)}
 <section id="que-es">
   <div class="wrap">
     <p class="eyebrow reveal">EL LAUNCHER</p>
-    <h2 class="title reveal">¿Qué es Minecraft Launcher_GHB?</h2>
-    <p class="sub reveal">Un launcher de escritorio para Windows que reúne todas las ediciones de Minecraft en una sola app, con el mismo aspecto limpio y pixelado del juego.</p>
+    <h2 class="title reveal">¿Qué es Minecraft Launcher GHB?</h2>
+    <p class="sub reveal">Un launcher de escritorio (Windows completo; Linux y Mac en modo experimental) que reúne todas las ediciones de Minecraft en una sola app, con el mismo aspecto limpio y pixelado del juego.</p>
     <div class="about" style="margin-top:44px">
       <div class="card reveal">
         <h3 class="mc" style="font-size:1.3rem;color:var(--greenL)">Un solo lugar para jugarlo todo</h3>
@@ -181,7 +213,7 @@ footer a{color:var(--greenL)}
         <p>Inicia sesión con <b>cuentas offline</b>, administra varias con un clic y personaliza cada instalación con más de 130 iconos.</p>
         <p>Las secciones de <b>Novedades</b>, <b>Realms</b> y <b>Marketplace</b> se conectan en vivo con minecraft.net, así siempre ves lo último.</p>
       </div>
-      <div class="shot reveal"><img src="assets/shots/home.jpg" alt="Pantalla principal del launcher"></div>
+      <div class="shot reveal"><img src="assets/images/get-minecraft-launcher.jpg" alt="Pantalla principal del launcher"></div>
     </div>
   </div>
 </section>
@@ -194,7 +226,7 @@ footer a{color:var(--greenL)}
     <p class="sub reveal">Cada juego con su propia pantalla, su arte y su botón listo para jugar o comprar.</p>
     <div class="games">
       <div class="game reveal">
-        <div class="gbg" style="background-image:url('assets/bg/java.jpg')"></div>
+        <div class="gbg" style="background-image:url('assets/images/deser-update.jpg')"></div>
         <span class="tag play">▶ JUGAR</span>
         <div class="gc">
           <img class="gicon" src="assets/brand/java.png" alt="">
@@ -203,7 +235,7 @@ footer a{color:var(--greenL)}
         </div>
       </div>
       <div class="game reveal">
-        <div class="gbg" style="background-image:url('assets/bg/bedrock.jpg')"></div>
+        <div class="gbg" style="background-image:url('assets/images/trailes-tales.jpg')"></div>
         <span class="tag play">▶ JUGAR</span>
         <div class="gc">
           <img class="gicon" src="assets/brand/bedrock.png" alt="">
@@ -212,7 +244,7 @@ footer a{color:var(--greenL)}
         </div>
       </div>
       <div class="game reveal">
-        <div class="gbg" style="background-image:url('assets/bg/dungeons.jpg')"></div>
+        <div class="gbg" style="background-image:url('assets/images/dungeong-2.jpg')"></div>
         <span class="tag buy">🛒 COMPRAR</span>
         <div class="gc">
           <img class="gicon" src="assets/brand/dungeons.png" alt="">
@@ -221,7 +253,7 @@ footer a{color:var(--greenL)}
         </div>
       </div>
       <div class="game reveal">
-        <div class="gbg" style="background-image:url('assets/bg/legends.jpg')"></div>
+        <div class="gbg" style="background-image:url('assets/images/minecraft-legends.jpg')"></div>
         <span class="tag buy">🛒 COMPRAR</span>
         <div class="gc">
           <img class="gicon" src="assets/brand/legends.png" alt="">
@@ -251,66 +283,110 @@ footer a{color:var(--greenL)}
   </div>
 </section>
 
-<!-- ===== CAPTURAS ===== -->
-<section id="capturas" style="background:var(--bg2)">
-  <div class="wrap">
-    <p class="eyebrow reveal">GALERÍA</p>
-    <h2 class="title reveal">Así se ve por dentro</h2>
-    <p class="sub reveal">Capturas de la interfaz principal y las pantallas de navegación.</p>
-    <div class="shots">
-      <div class="shotcard reveal"><img src="assets/shots/skins.jpg" alt="Vestidor de skins"><div class="cap">Vestidor de skins</div></div>
-      <div class="shotcard reveal"><img src="assets/shots/skins-archivo.jpg" alt="Archivo de skins"><div class="cap">Archivo de skins</div></div>
-      <div class="shotcard reveal"><img src="assets/shots/marketplace.jpg" alt="Marketplace"><div class="cap">Marketplace en vivo</div></div>
-      <div class="shotcard reveal"><img src="assets/shots/realm.jpg" alt="Realms"><div class="cap">Realms</div></div>
-    </div>
-  </div>
-</section>
-<!-- ===== DESCARGAR ===== -->
-<section id="descargar" class="download">
-  <div class="wrap">
-    <p class="eyebrow reveal">DESCARGAR</p>
-    <h2 class="title reveal">Llévate el launcher</h2>
-    <p class="sub reveal">Elige la versión que prefieras. Compatible con Windows.</p>
-    <div class="dlbox reveal" style="margin-top:40px">
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:6px">
-        <img src="assets/brand/steve.png" style="width:40px;height:40px;image-rendering:pixelated" alt="">
-        <img src="assets/brand/creeper.png" style="width:40px;height:40px;image-rendering:pixelated" alt="">
-      </div>
-      <h3 class="mc" style="font-size:1.4rem">Minecraft Launcher_GHB</h3>
-      <p style="color:var(--dim);margin-top:6px">Versión estable · v1.0.3</p>
-      <div class="btns">
-        <a class="btn main" href="https://https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/MinecraftLauncher.exe">Descargar .exe <small>Instalador para Windows</small></a>
-        <a class="btn alt" href="https://https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/mc-launcher-v8.zip">Descargar .zip <small>Versión portable</small></a>
-      </div>
-      <p class="note">¿Problemas con la descarga? Visita la <a style="color:var(--greenL)" href="https://github.com/launcher-gabriel2004/LAUNCHER-MINECRAFT-JAVA-Y-BEDROCK/releases">página de releases en GitHub</a>.</p>
-    </div>
-  </div>
-</section>
+<section id="tour" style="padding-bottom:20px"><div class="wrap"><p class="eyebrow reveal">TOUR DEL LAUNCHER</p><h2 class="title reveal">Todas las pantallas, explicadas</h2><p class="sub reveal">Un recorrido por cada parte de Minecraft Launcher GHB, de arriba a abajo del menú lateral: qué es, qué hace y cómo se usa.</p>
+<div class="toc reveal"><a href="#t-home">Home</a><a href="#t-java">Java</a><a href="#t-bedrock">Bedrock</a><a href="#t-dung2">Dungeons II</a><a href="#t-dung">Dungeons</a><a href="#t-legends">Legends</a><a href="#t-vestidor">Vestidor</a><a href="#t-new">What's New</a><a href="#t-settings">Settings</a><a href="#t-inst">Instalaciones</a><a href="#t-market">Marketplace</a><a href="#t-realms">Realms</a><a href="#t-patch">Patch Notes</a><a href="#t-accounts">Cuentas</a></div></div></section>
+<section id="t-home" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">HOME</p><h3 class="mc tt">Home <span class="g">· Quick Play</span></h3><p>El icono de <b>Home</b> es el bloque de césped de Java. Arriba tienes el botón <b>QUICK PLAY</b>, grande y centrado: viene con <b>Java</b> activo y lanza la instalación que elijas con un clic.</p><ul class="ck"><li>Menú de juegos y <b>Edit quick play</b>, con todos los iconos disponibles.</li><li>Debajo del botón: carrusel y noticias de Mojang / minecraft.net, con buscador y filtros.</li><li>Animaciones de entrada al abrir el launcher (se pueden desactivar en Settings).</li></ul></div><div class="ti reveal"><div class="homeico"><img src="assets/brand/grass_block.png" alt="Home"><span>HOME</span></div><div class="gal"><img loading="lazy" src="assets/images/vibrant-visuals-arrives-in-minecraft-mar.jpg" alt=""><img loading="lazy" src="assets/images/trial-chamber.jpg" alt=""></div></div></div></div></section>
+<section id="t-java" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">JAVA EDITION</p><h3 class="mc tt">Java <span class="g">Edition</span></h3><p>Pestañas: <b>Play</b>, <b>Installations</b>, <b>Realms</b>, <b>Skins</b> y <b>Patch Notes</b>. Al lado del botón Play eliges la versión (Release o Snapshot) y su loader.</p><ul class="ck"><li>Lanza desde <code>.minecraft</code> sin tocar la descarga oficial de Mojang.</li><li>Fabric, Quilt y Forge: se instalan solos y cada instalación tiene su propia carpeta de mods.</li><li>Versiones 1.0 a 1.5.1 arrancan con su propia carpeta .minecraft.</li></ul></div><div class="ti reveal"><figure class="win logo"><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/743656957219889203.jpg" alt="Java Edition"><figcaption>Java Edition</figcaption></figure><div class="gal"><img loading="lazy" src="assets/images/wilderness-bound.jpg" alt=""><img loading="lazy" src="assets/images/deser-update.jpg" alt=""></div></div></div></div></section>
+<section id="t-bedrock" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">BEDROCK EDITION</p><h3 class="mc tt">Bedrock <span class="g">Edition</span></h3><p>No busca carpetas: detecta el Bedrock instalado en Windows y lo abre directo con su identificador real, mostrando su versión junto al botón Play.</p><ul class="ck"><li>Play abre el juego, ya no una carpeta de Documentos.</li><li>Pestañas con Marketplace y Realms conectados a minecraft.net.</li></ul></div><div class="ti reveal"><figure class="win logo"><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/844073155160415624.jpg" alt="Bedrock Edition"><figcaption>Bedrock Edition</figcaption></figure><div class="gal"><img loading="lazy" src="assets/images/trailes-tales.jpg" alt=""><img loading="lazy" src="assets/images/minecraft-on-x.jpg" alt=""></div></div></div></div></section>
+<section id="t-dung2" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">DUNGEONS II</p><h3 class="mc tt">Dungeons <span class="g">II</span></h3><p>La nueva aventura de mazmorras. Su icono en el menú lateral tiene <b>auroras y estrellas animadas</b>. Se detecta con Windows y se lanza desde su paquete.</p><ul class="ck"><li>Compra o juega según lo que tengas instalado.</li><li>Catálogo de DLC en vivo.</li></ul></div><div class="ti reveal"><figure class="win "><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/dungeong-2.jpg" alt="Minecraft Dungeons II"><figcaption>Minecraft Dungeons II</figcaption></figure></div></div></div></section>
+<section id="t-dung" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">DUNGEONS</p><h3 class="mc tt">Dungeons <span class="g">1</span></h3><p>El clásico de acción en mazmorras, con su propia pantalla, su arte y su botón de jugar o comprar.</p><ul class="ck"><li>Detección automática del juego instalado.</li><li>Mismo estilo de menú que el resto de ediciones.</li></ul></div><div class="ti reveal"><div class="dgrid"><figure class="win tallw"><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/dungeong.jpg" alt="Dungeons"><figcaption>Dungeons</figcaption></figure><figure class="win tallw"><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/7248049395038517.jpg" alt="Dungeons"><figcaption>Dungeons</figcaption></figure></div></div></div></div></section>
+<section id="t-legends" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">LEGENDS</p><h3 class="mc tt">Minecraft <span class="g">Legends</span></h3><p>Estrategia en tiempo real para defender el Mundo Principal. Entra desde el launcher sin buscar el acceso directo.</p><ul class="ck"><li>Se detecta por su paquete de Windows.</li><li>Pantalla propia con su arte oficial.</li></ul></div><div class="ti reveal"><figure class="win tallw"><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/minecraft-legends.jpg" alt="Legends"><figcaption>Legends</figcaption></figure></div></div></div></section>
+<section id="t-vestidor" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">VESTIDOR</p><h3 class="mc tt">Vestidor <span class="g">· Skins y capas</span></h3><p>Tu skin se ve en 3D (de pie y caminando) y la capa se ve en su espalda. Sin skin elegida, se muestra Steve. El juego también carga tu skin y capa gracias al servidor local.</p><h4 class="h4">Cómo agregar una skin</h4><ol class="how"><li>Entra en <b>Skins</b> y pulsa <b>Add new skin</b>.</li><li>En <b>Skin file</b> elige tu PNG y marca <b>Wide</b> o <b>Slim</b>.</li><li>Revisa el 3D con <b>Front / Back / Stand</b> y guarda.</li></ol><h4 class="h4">Cómo agregar una capa</h4><ol class="how"><li>Pulsa <b>Add cape</b> (puedes elegir varias a la vez).</li><li>Todas se guardan en una biblioteca global, sin límite.</li><li>Elige una: se aplica a cualquier skin y el visor gira a la espalda.</li></ol><p class="dim">Skins incluidas: Steve, <b>Blue RGB</b> y <b>Pink Pants</b>.</p></div><div class="ti reveal"><figure class="win "><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/archivo-de-skin.jpg" alt="Add new skin: Skin file, Wide / Slim"><figcaption>Add new skin: Skin file, Wide / Slim</figcaption></figure><figure class="win "><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/biblioteca-de-skin.jpg" alt="Biblioteca de skins"><figcaption>Biblioteca de skins</figcaption></figure><p class="dim" style="text-align:center;font-size:.8rem">Texturas de las skins incluidas: Blue RGB y Pink Pants</p><div class="skinrow"><img src="assets/skins/pelo-azul-rgb.png" alt="Blue RGB"><img src="assets/skins/pijama-rosa.png" alt="Pink Pants"></div></div></div></div></section>
+<section id="t-new" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">WHAT'S NEW</p><h3 class="mc tt">What's <span class="g">New</span></h3><p>Cinco pestañas: <b>Launcher</b>, <b>Novedades</b>, <b>Realms</b>, <b>Marketplace</b> y <b>Creator</b>, con artículos reales y en vivo de minecraft.net y Mojang.</p><ul class="ck"><li>Diálogo <b>What's new in the Launcher?</b> con el historial 2021–2026.</li><li>Versión actual mostrada: <b>v3.42.5-2.6.2</b>.</li></ul></div><div class="ti reveal"><div class="gal"><img loading="lazy" src="assets/images/minecraft-novedad.jpg" alt=""><img loading="lazy" src="assets/images/minecraft-patch-download-free-with-hd-gr.jpg" alt=""></div></div></div></div></section>
+<section id="t-settings" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">SETTINGS</p><h3 class="mc tt">Settings <span class="g">· lo nuevo</span></h3><p>Elige una pestaña para ver qué hace cada una.</p></div><div class="ti reveal"><div class="win"><div class="wbar"><i></i><i></i><i></i><span>Settings</span></div><div class="tabs"><button class="on" data-t="s1">General</button><button data-t="s2">About</button><button data-t="s3">Modrinth</button><button data-t="s4">CurseForge</button></div>
+<div class="tp on" id="s1"><b>Launcher Settings, Accessibility, Java Edition Settings y Quick Play.</b><ul class="ck"><li>Make text size bigger y animaciones (transiciones / botón Play).</li><li>Disable hardware acceleration y Disable video autoplay.</li><li>Keep the Launcher open, Open output log y Enable snapshots.</li><li>Launcher data folder &gt; Open y botón rojo <i>Delete All Quick Play Entries</i>.</li></ul></div>
+<div class="tp" id="s2"><b>About</b><ul class="ck"><li>Launcher for Windows, Bootstrap, UI, Legal y Credits.</li><li>Third-party licenses y botón <i>What's New</i>.</li></ul></div>
+<div class="tp" id="s3"><b>Modrinth dentro del launcher</b><ul class="ck"><li>Se abre ya filtrado por la versión y el loader de tu instalación activa.</li><li>Cada descarga va a la carpeta del perfil: mods, resourcepacks, shaderpacks o datapacks.</li><li>Modpacks <code>.mrpack</code>: crean una instalación nueva e independiente.</li></ul></div>
+<div class="tp" id="s4"><b>CurseForge dentro del launcher</b><ul class="ck"><li>Mismo filtro por versión y loader, con botón <i>Change installation</i>.</li><li>Modpacks <code>.zip</code>: instalación nueva con su loader, mods y config.</li><li>Si el mod pide otro loader, te avisa y te ofrece crearlo.</li></ul></div></div></div></div></div></section>
+<section id="t-inst" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">INSTALACIONES</p><h3 class="mc tt">Instalaciones <span class="g">· New installation</span></h3><p>Crear una instalación ahora tiene <b>más de 130 iconos nuevos</b>, nítidos y sin bordes blancos, y una sección <b>Loader</b> al final.</p><ul class="ck"><li>Loader: <b>Vanilla</b> (por defecto), <b>Fabric</b>, <b>Quilt</b> o <b>Forge</b>, con instalación automática.</li><li>Cada loader usa su propia carpeta, con sus mods y su configuración.</li><li>La lista muestra chips de versión (Release/Snapshot) y de loader.</li><li>Barra de descarga abajo: nombre, MB, porcentaje y Cancelar (Pausa en mods y modpacks).</li></ul><div class="chips" style="margin-top:14px"><span class="chip">Vanilla</span><span class="chip">Fabric</span><span class="chip">Quilt</span><span class="chip">Forge</span></div></div><div class="ti reveal"><div class="win"><div class="wbar"><i></i><i></i><i></i><span>Create new installation</span></div><div class="ig"><img loading="lazy" src="assets/icons/b-grass.png" alt=""><img loading="lazy" src="assets/icons/b-diamond.png" alt=""><img loading="lazy" src="assets/icons/b-gold.png" alt=""><img loading="lazy" src="assets/icons/b-iron.png" alt=""><img loading="lazy" src="assets/icons/b-emerald.png" alt=""><img loading="lazy" src="assets/icons/b-redstone.png" alt=""><img loading="lazy" src="assets/icons/b-tnt.png" alt=""><img loading="lazy" src="assets/icons/b-oak.png" alt=""><img loading="lazy" src="assets/icons/b-furnace.png" alt=""><img loading="lazy" src="assets/icons/b-craft.png" alt=""><img loading="lazy" src="assets/icons/b-pumpkin.png" alt=""><img loading="lazy" src="assets/icons/b-obsidian.png" alt=""><img loading="lazy" src="assets/icons/n-chest.png" alt=""><img loading="lazy" src="assets/icons/n-cake.png" alt=""><img loading="lazy" src="assets/icons/n-ender-chest.png" alt=""><img loading="lazy" src="assets/icons/n-creeper-head.png" alt=""><img loading="lazy" src="assets/icons/n-blue-ice.png" alt=""><img loading="lazy" src="assets/icons/n-lectern.png" alt=""><img loading="lazy" src="assets/icons/i-steve-alex.png" alt=""><img loading="lazy" src="assets/icons/i-creeper.png" alt=""><img loading="lazy" src="assets/icons/b-lapis.png" alt=""><img loading="lazy" src="assets/icons/b-netherrack.png" alt=""><img loading="lazy" src="assets/icons/n-azalea-flowering.png" alt=""><img loading="lazy" src="assets/icons/b-purpur.png" alt=""></div><div class="dlbar"><span>Descargando… 48 MB / 96 MB</span><div><b style="width:50%"></b></div><em>Cancelar</em></div></div></div></div></div></section>
+<section id="t-market" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">MARKETPLACE</p><h3 class="mc tt">Marketplace</h3><p>El catálogo oficial de minecraft.net dentro del launcher: add-ons, mundos y packs de skins, con la entrada <b>Enter the Marketplace</b>.</p></div><div class="ti reveal"><figure class="win "><div class="wbar"><i></i><i></i><i></i><span>Minecraft Launcher GHB</span></div><img loading="lazy" src="assets/images/what-is-marketplace.jpg" alt="Marketplace"><figcaption>Marketplace</figcaption></figure><div class="gal g3"><img loading="lazy" src="assets/images/marketplace.jpg" alt=""><img loading="lazy" src="assets/images/onblock-markeplece.jpg" alt=""><img loading="lazy" src="assets/images/parkour-add-on.jpg" alt=""><img loading="lazy" src="assets/images/minisoldielrs-add-on.jpg" alt=""><img loading="lazy" src="assets/images/maorph-pack-add-on.jpg" alt=""><img loading="lazy" src="assets/images/ether-dimension-add-on.jpg" alt=""></div></div></div></div></section>
+<section id="t-realms" class="tour alt"><div class="wrap"><div class="trow flip"><div class="tx reveal"><p class="eyebrow l">REALMS</p><h3 class="mc tt">Realms</h3><p>Información y acceso a Realms conectado en vivo a minecraft.net, también como pestaña en What's New.</p></div><div class="ti reveal"><div class="gal g4"><img loading="lazy" src="assets/images/realm.jpg" alt=""><img loading="lazy" src="assets/images/realm-b.jpg" alt=""><img loading="lazy" src="assets/images/realm-defender.jpg" alt=""><img loading="lazy" src="assets/images/realm-sv.jpg" alt=""></div></div></div></div></section>
+<section id="t-patch" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">PATCH NOTES</p><h3 class="mc tt">Patch <span class="g">Notes</span></h3><p>Las notas de cada versión de Java y Bedrock sin salir del launcher.</p></div><div class="ti reveal"><div class="gal"><img loading="lazy" src="assets/images/minecraft-version-3-13-patch-notes-for-p.jpg" alt=""><img loading="lazy" src="assets/images/nether-update.jpg" alt=""><img loading="lazy" src="assets/images/chaos-cubed.jpg" alt=""><img loading="lazy" src="assets/images/wilderness-bound-hero.jpg" alt=""></div></div></div></div></section>
+<section id="t-accounts" class="tour"><div class="wrap"><div class="trow"><div class="tx reveal"><p class="eyebrow l">CUENTAS</p><h3 class="mc tt">Accounts <span class="g">· Offline y avatares</span></h3><p>Entra con una <b>cuenta offline</b>: solo escribe un nombre y elige un avatar. Puedes tener varias y cambiar con un clic.</p><ul class="ck"><li>La cara de tu skin aparece junto a tu nombre.</li><li>Al hacer clic se abre un menú: Help, Manage profile, Log out, cuentas y View all accounts.</li><li>Las cuentas offline no entran a servidores con <code>online-mode=true</code>.</li></ul></div><div class="ti reveal"><div class="win"><div class="wbar"><i></i><i></i><i></i><span>Add offline account</span></div><div class="avs" id="avs"></div></div></div></div></div></section>
+<section id="descargar" class="download"><div class="wrap"><p class="eyebrow reveal">DESCARGAR</p><h2 class="title reveal">Llévate el launcher</h2><p class="sub reveal">Versión v1.0.8. Elige tu sistema.</p>
+<div class="os reveal">
+<div class="osc main"><div class="oi">🪟</div><h3 class="mc">Download Windows</h3><p class="dim">Todo funciona: Java, Bedrock, Dungeons, Dungeons II y Legends.</p><a class="btn main" href="https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/MinecraftLauncher.exe">Descargar .exe <small>Portable · doble clic, sin instalar</small></a><a class="btn alt" href="https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/mc-launcher-v8.zip">Descargar .zip <small>Código fuente + compilador</small></a></div>
+<div class="osc"><div class="oi">🐧</div><h3 class="mc">Download Linux</h3><span class="tagx">EXPERIMENTAL</span><p class="dim">Solo <b>Java Edition</b>, skins, capas y mods. Bedrock, Dungeons y Legends existen solo en Windows.</p><a class="btn alt" href="https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/mc-launcher-v8.zip">Descargar .zip <small>Se ejecuta con Node.js</small></a></div>
+<div class="osc"><div class="oi">🍎</div><h3 class="mc">Download Mac</h3><span class="tagx">EXPERIMENTAL</span><p class="dim">Igual que Linux: solo <b>Java Edition</b>, skins, capas y mods.</p><a class="btn alt" href="https://github.com/launcher-gabriel2004/ghb-launcher/releases/download/V1.0.8/mc-launcher-v8.zip">Descargar .zip <small>Se ejecuta con Node.js</small></a></div></div>
+<p class="note" style="text-align:center">¿Problemas con la descarga? Visita la <a style="color:var(--greenL)" href="https://github.com/launcher-gabriel2004/LAUNCHER-MINECRAFT-JAVA-Y-BEDROCK/releases">página de releases en GitHub</a>.</p></div></section>
 
-<!-- ===== INSTALACIÓN ===== -->
-<section id="instalacion">
-  <div class="wrap">
-    <p class="eyebrow reveal">INSTALACIÓN</p>
-    <h2 class="title reveal">Cómo instalarlo</h2>
-    <p class="sub reveal">En cuatro pasos sencillos estás jugando.</p>
-    <div class="steps">
-      <div class="step reveal"><h3>Descarga</h3><p>Baja el <code>.exe</code> o el <code>.zip</code> desde la sección de arriba.</p></div>
-      <div class="step reveal"><h3>Instala o extrae</h3><p>Ejecuta el <code>.exe</code> o descomprime el <code>.zip</code> en la carpeta que quieras.</p></div>
-      <div class="step reveal"><h3>Abre el launcher</h3><p>Inicia <b>MinecraftLauncher.exe</b> y entra con tu cuenta offline.</p></div>
-      <div class="step reveal"><h3>¡A jugar!</h3><p>Elige Java, Bedrock, Dungeons o Legends y pulsa <b>JUGAR</b>.</p></div>
-    </div>
-  </div>
-</section>
+<section id="instalacion"><div class="wrap"><p class="eyebrow reveal">GUÍA</p><h2 class="title reveal">Cómo descargar e instalar</h2><p class="sub reveal">Dos formas en Windows (.exe o .zip) y una para Linux y Mac.</p>
+<div class="guide reveal"><div class="tabs"><button class="on" data-t="g1">Windows · .exe</button><button data-t="g2">Windows · .zip</button><button data-t="g3">Linux / Mac</button></div>
+<div class="tp on" id="g1"><ol class="how"><li>Pulsa <b>Descargar .exe</b> en la sección Windows.</li><li>Haz doble clic en <code>MinecraftLauncher.exe</code>. Es portable: no instala nada y abre directo.</li><li>Si Windows muestra SmartScreen, pulsa <b>Más información → Ejecutar de todas formas</b> (el .exe no está firmado).</li><li>Entra con tu cuenta offline y pulsa <b>PLAY</b>.</li></ol></div>
+<div class="tp" id="g2"><ol class="how"><li>Instala <b>Node.js LTS</b> desde nodejs.org.</li><li>Descarga el <b>.zip</b> y descomprímelo.</li><li>Doble clic en <code>crear.windows.exe.bat</code>: compila el launcher y abre la carpeta <code>dist</code> con <code>MinecraftLauncher.exe</code>.</li><li>Para probar sin compilar: <code>npm install</code> y luego <code>npm start</code>.</li></ol></div>
+<div class="tp" id="g3"><p class="dim" style="margin-bottom:10px">Experimental: solo Java Edition. No lo he podido probar en estos sistemas.</p><ol class="how"><li>Instala <b>Node.js LTS</b>.</li><li>Descarga el <b>.zip</b> y abre una terminal.</li><li>Ejecuta: <code>unzip mc-launcher-v8.zip &amp;&amp; cd mc-launcher</code></li><li>Luego: <code>npm install</code> y <code>npm start</code>.</li></ol></div></div></div></section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="wrap">
-    <div class="fbrand"><img src="assets/brand/creeper.png" alt="">Minecraft Launcher_GHB</div>
+    <div class="fbrand"><img src="assets/brand/creeper.png" alt="">Minecraft Launcher GHB</div>
     <p>Hecho con 💚 para la comunidad. Si te gusta, compártelo con tus amigos.</p>
     <p style="margin-top:10px">Minecraft es una marca de Mojang Studios / Microsoft. Este launcher no es un producto oficial.</p>
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.tabs').forEach(function(t){t.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var box=t.parentElement;t.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});box.querySelectorAll('.tp').forEach(function(p){p.classList.toggle('on',p.id===b.dataset.t)})})});
+(function(){
+var HUMAN = { S: '#c69c7b', N: '#a87b5c', M: '#8a5a44', W: '#f2f2f2', B: '#4b3fa0', G: '#3a9a4a', K: '#3b2a1f' };
+var humanFace = (hair) => ({ ...HUMAN, H: hair });
+
+var AVATARS = [
+  { id: 'steve', name: 'Steve', pal: humanFace('#4a3321'), art: [
+    'HHHHHHHH', 'HHHHHHHH', 'HSSSSSSH', 'SSSSSSSS', 'SWBSSBWS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+  { id: 'alex', name: 'Alex', pal: { ...humanFace('#d9822b'), S: '#d7ad8c' }, art: [
+    'HHHHHHHH', 'HHHHHHHH', 'HSSSSSSH', 'HSSSSSSH', 'SWGSSGWS', 'SSSNNSSS', 'SSSMMSSS', 'SSSSSSSS'] },
+  { id: 'creeper', name: 'Creeper', pal: { G: '#5db648', g: '#4a9a39', k: '#101810' }, art: [
+    'GgGGGGgG', 'GGgGGGGg', 'GkkGGkkG', 'GkkGGkkG', 'GGGkkGGG', 'GGkkkkGG', 'GGkkkkGG', 'GgkGGkgG'] },
+  { id: 'zombie', name: 'Zombie', pal: { G: '#5f9b4b', g: '#4d8240', b: '#2b2f8f', n: '#3d6b33', m: '#2f4f28' }, art: [
+    'GGgGGGgG', 'GGGGGGGG', 'GgGGGGgG', 'GbbGGbbG', 'GGGnnGGG', 'GGnnnnGG', 'GGGmmGGG', 'GGGGGGGG'] },
+  { id: 'skeleton', name: 'Skeleton', pal: { W: '#cfcfcf', w: '#b0b0b0', k: '#3a3a3a' }, art: [
+    'WWWWWWWW', 'WwWWWWwW', 'WWWWWWWW', 'WkkWWkkW', 'WkkWWkkW', 'WWWkkWWW', 'WkWkkWkW', 'WWWWWWWW'] },
+  { id: 'spider', name: 'Spider', pal: { D: '#2a2220', d: '#3a302c', r: '#a02020', w: '#8a8a8a' }, art: [
+    'DdDDDDdD', 'DDDDDDDD', 'DrDDDDrD', 'DrrDDrrD', 'DDDDDDDD', 'DDwDDwDD', 'DwDDDDwD', 'DDDDDDDD'] },
+  { id: 'villager', name: 'Villager', pal: { S: '#b5835f', B: '#3d2a1e', N: '#8d5f43', W: '#eeeeee', G: '#3f8f3f' }, art: [
+    'SSSSSSSS', 'SSSSSSSS', 'BBBBBBBB', 'SWGSSGWS', 'SSSNNSSS', 'SSSNNSSS', 'SSSNNSSS', 'SSSSSSSS'] },
+  { id: 'warden', name: 'Warden', pal: { D: '#0f2a31', l: '#1d5560', C: '#2fd1c0' }, art: [
+    'DDlDDlDD', 'DlDCCDlD', 'DDDDDDDD', 'DlDDDDlD', 'DDDDDDDD', 'DCDDDDCD', 'DDlllllD', 'DDDDDDDD'] },
+  { id: 'allay', name: 'Allay', pal: { B: '#3fc6ff', b: '#2aa0e0', k: '#1b2a4a', w: '#ffffff' }, art: [
+    'bBBBBBBb', 'BBBBBBBB', 'BBBBBBBB', 'BkkBBkkB', 'BkwBBkwB', 'BBBBBBBB', 'BBBkkBBB', 'bBBBBBBb'] },
+  { id: 'enderman', name: 'Enderman', pal: { K: '#111111', k: '#1c1c1c', p: '#d84cff', P: '#f0b0ff' }, art: [
+    'KKKKKKKK', 'KkKKKKkK', 'KKKKKKKK', 'KKKKKKKK', 'KpPKKPpK', 'KKKKKKKK', 'KkKKKKkK', 'KKKKKKKK'] },
+  { id: 'pig', name: 'Pig', pal: { P: '#f5b5bf', s: '#e88a98', n: '#b0505e', W: '#f2f2f2', B: '#3a2a6a' }, art: [
+    'PPPPPPPP', 'PPPPPPPP', 'PPPPPPPP', 'PWBPPBWP', 'PPPPPPPP', 'PPssssPP', 'PPsnnsPP', 'PPPPPPPP'] },
+  { id: 'cow', name: 'Cow', pal: { B: '#4a3728', H: '#d8d2b8', W: '#e8e8e8', k: '#222222', M: '#c9b79a', n: '#7a6a58' }, art: [
+    'BBBBBBBB', 'HBBBBBBH', 'BBBBBBBB', 'BWkBBkWB', 'BBBBBBBB', 'BBMMMMBB', 'BMnMMnMB', 'BBMMMMBB'] },
+  { id: 'sheep', name: 'Sheep', pal: { W: '#f2f2f2', S: '#c4a484', k: '#222222', n: '#8b6f55' }, art: [
+    'WWWWWWWW', 'WWWWWWWW', 'WSSSSSSW', 'WSkSSkSW', 'WSSSSSSW', 'WSSnnSSW', 'WWSSSSWW', 'WWWWWWWW'] },
+  { id: 'chicken', name: 'Chicken', pal: { W: '#f4f4f4', k: '#222222', Y: '#f5b32f', r: '#d83a3a' }, art: [
+    'WWWWWWWW', 'WWWWWWWW', 'WWkWWkWW', 'WWYYYYWW', 'WWYYYYWW', 'WWWrrWWW', 'WWWrrWWW', 'WWWWWWWW'] },
+  { id: 'wolf', name: 'Wolf', pal: { G: '#cfcfcf', g: '#8a8a8a', w: '#e9e9e9', n: '#222222', k: '#444444', W: '#ffffff' }, art: [
+    'gGGGGGGg', 'GGGGGGGG', 'GWkGGkWG', 'GGGGGGGG', 'GGwwwwGG', 'GGwnnwGG', 'GGwwwwGG', 'GGGGGGGG'] },
+  { id: 'fox', name: 'Fox', pal: { O: '#e0762a', K: '#2a1a12', k: '#2a1a12', w: '#f4efe6', n: '#2a1a12' }, art: [
+    'KOOOOOOK', 'OOOOOOOO', 'OkOOOOkO', 'OOOOOOOO', 'OwwOOwwO', 'OwwwwwwO', 'OwwnnwwO', 'OOwwwwOO'] },
+  { id: 'panda', name: 'Panda', pal: { W: '#f2f2f2', K: '#1e1e1e' }, art: [
+    'KKWWWWKK', 'KKWWWWKK', 'WWWWWWWW', 'WKKWWKKW', 'WKWWWWKW', 'WWWKKWWW', 'WWKWWKWW', 'WWWWWWWW'] },
+  { id: 'bee', name: 'Bee', pal: { Y: '#f5c732', K: '#2a2018', w: '#ffffff' }, art: [
+    'YYYYYYYY', 'YYYYYYYY', 'YKKYYKKY', 'YKwYYKwY', 'YYYYYYYY', 'KKKKKKKK', 'YYYYYYYY', 'YYYYYYYY'] },
+  { id: 'axolotl', name: 'Axolotl', pal: { P: '#f6b6d0', r: '#e0709a', k: '#3a2030' }, art: [
+    'PPPPPPPP', 'PPPPPPPP', 'rPPPPPPr', 'rPkPPkPr', 'rPPPPPPr', 'PPPPPPPP', 'PPkkkkPP', 'PPPPPPPP'] },
+  { id: 'slime', name: 'Slime', pal: { G: '#7ebf6e', g: '#5fa352', k: '#1e3a1a' }, art: [
+    'gggggggg', 'gGGGGGGg', 'gGGGGGGg', 'gGkkGkkg', 'gGkkGkkg', 'gGGGGGGg', 'gGGkkGGg', 'gggggggg'] },
+  { id: 'calm', name: 'Calm', pal: humanFace('#2d2a3a'), art: [
+    'HHHHHHHH', 'HHHHHHHH', 'HSSSSSSH', 'SSSSSSSS', 'SKKSSKKS', 'SSSNNSSS', 'SSKSSKSS', 'SSSKKSSS'] },
+  { id: 'explorer', name: 'Explorer', pal: { ...humanFace('#4a3321'), T: '#8b5a2b', t: '#5a3a1b' }, art: [
+    'TTTTTTTT', 'TTTTTTTT', 'tttttttt', 'SSSSSSSS', 'SWBSSBWS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+  { id: 'fighter', name: 'Fighter', pal: { ...humanFace('#2a1a12'), R: '#c42b2b' }, art: [
+    'HHHHHHHH', 'HHHHHHHH', 'RRRRRRRR', 'SSSSSSSS', 'SKWSSWKS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+  { id: 'builder', name: 'Builder', pal: { ...humanFace('#4a3321'), Y: '#f5c732', y: '#c99a12' }, art: [
+    'YYYYYYYY', 'YYYYYYYY', 'yyyyyyyy', 'SSSSSSSS', 'SWBSSBWS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+  { id: 'miner', name: 'Miner', pal: { ...humanFace('#4a3321'), g: '#8a8f96', d: '#5c6168', L: '#ffe27a' }, art: [
+    'gggLLggg', 'ggggggg' + 'g', 'dddddddd', 'SSSSSSSS', 'SWBSSBWS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+  { id: 'farmer', name: 'Farmer', pal: { ...humanFace('#4a3321'), H: '#e0c060', h: '#b8963c' }, art: [
+    'HHHHHHHH', 'HHHHHHHH', 'hhhhhhhh', 'SSSSSSSS', 'SWBSSBWS', 'SSSNNSSS', 'SSMMMMSS', 'SSSSSSSS'] },
+];
+var el=document.getElementById('avs');if(!el)return;AVATARS.forEach(function(a){var d=document.createElement('div'),c=document.createElement('canvas');c.width=c.height=8;var g=c.getContext('2d');a.art.forEach(function(r,y){for(var x=0;x<8;x++){var k=a.pal[r[x]];if(k){g.fillStyle=k;g.fillRect(x,y,1,1)}}});d.appendChild(c);d.appendChild(document.createTextNode(a.name));el.appendChild(d)})})();
+</script>
 <script>
 (function(){
   var io=new IntersectionObserver(function(es){
